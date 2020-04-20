@@ -24,3 +24,4 @@ temp_names <- paste0("v",as.character(1:81))
 names(all)<-temp_names
 mean_all <- all %>% group_by(v1,v2) %>% summarise_all(mean)
 names(mean_all) <- bufer_names
+mean_all
